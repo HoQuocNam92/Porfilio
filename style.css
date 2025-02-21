@@ -1,0 +1,456 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    font-family: "Montserrat", serif;
+}
+
+/* navigation */
+#nav {
+    position: fixed;
+    top: 0;
+    left: 40%;
+    background-color: #000;
+    text-align: center;
+    height: 100vh;
+    padding-top: 150px;
+    width: 60%;
+    z-index: 999;
+    display: none;
+}
+
+.remove-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #fff;
+    font-size: 32px;
+    padding: 16px;
+    font-size: 32px;
+    z-index: 1000;
+    cursor: pointer;
+    display: none;
+}
+
+.active {
+    display: block !important;
+}
+
+.remove-icon:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+.link {
+    display: block;
+    color: rgba(255, 255, 255, 0.6);
+    padding: 8px 16px;
+    font-size: 36px;
+    line-height: 54px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.link:hover {
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+/* sidebar */
+
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: 40%;
+}
+
+.sidebar-image {
+    background-image: url(https://www.w3schools.com/w3images/profile_girl.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+
+
+
+/* Page-content */
+
+#page-content {
+    margin-left: 40%;
+    padding: 12px 24px;
+}
+
+.menu-icons {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 16px;
+    font-size: 32px;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.menu-icons:hover {
+    background-color: #ccc;
+}
+
+
+
+
+/* Banner-imaga */
+
+.banner-image {
+    width: 100%;
+    max-width: 1000px;
+    display: none;
+}
+
+
+
+
+/* Header */
+
+.header {
+    text-align: center;
+    padding: 128px 16px;
+}
+
+.text-heading {
+    margin: 10px 0;
+    font-size: 64px;
+    font-weight: 500;
+}
+
+.text-description {
+    margin: 15px 0;
+    font-size: 15px;
+}
+
+.download-btn {
+    padding: 12px 24px;
+    margin-top: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.download-btn:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+
+
+/* Portfolio-seciont */
+.portfolio-section hr {
+    margin: 20px 0;
+    border-top: rgb(0, 0, 0);
+}
+
+.section-heading {
+    margin: 10px 0;
+    color: rgb(117, 117, 117);
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.section-image {
+    column-count: 2;
+}
+
+.image {
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+
+
+
+/* About */
+
+.about-section {
+    padding: 32px 0;
+}
+
+.about-section hr {
+    margin: 20px 0;
+    border-top: rgb(0, 0, 0);
+}
+
+.section-description {
+    margin: 15px 0;
+    font-size: 15px;
+    color: rgb(117, 117, 117);
+    text-align: justify;
+}
+
+.skills-title {
+    margin: 10px 0;
+    padding: 16px 0;
+    font-size: 24px;
+    font-weight: 400;
+    color: rgb(117, 117, 117);
+}
+
+.skill-name {
+    letter-spacing: 4px;
+    color: rgb(117, 117, 117);
+    font-size: 15px;
+    margin: 15px 0;
+}
+
+.skill-status {
+    background-color: rgb(241, 241, 241);
+}
+
+.skill-progress {
+    background-color: rgb(97, 97, 97);
+    padding: 4px 8px;
+    color: #fff;
+}
+
+.w-95 {
+    width: 95%;
+    text-align: center;
+}
+
+.w-85 {
+    width: 85%;
+    text-align: center;
+}
+
+.w-80 {
+    width: 80%;
+    text-align: center;
+}
+
+.row-section {
+    display: flex;
+    text-align: center;
+    margin: 16px 0;
+    padding: 16px 0;
+    background-color: rgb(97, 97, 97);
+    color: #fff;
+}
+
+.row-btn {
+    margin-bottom: 16px;
+}
+
+.col {
+    width: 25%;
+    margin: 16px 0;
+}
+
+.col-number {
+    font-size: 24px;
+}
+
+
+/* Testimonials */
+
+.testimonials-title {
+    margin: 10px 0;
+    padding: 24px 0;
+    color: rgb(117, 117, 117);
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.user-testimonials {
+    display: flex;
+}
+
+.user-title {
+    line-height: 28px;
+}
+
+.user-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 16px;
+}
+
+.user-name {
+    color: rgb(117, 117, 117);
+    font-size: 15pxs;
+}
+
+.user-name span {
+    margin-right: 16px;
+    font-size: 18px;
+    color: #000;
+}
+
+.user-description {
+    margin: 15px 0;
+    color: rgb(117, 117, 117);
+}
+
+
+
+/* Grid for pricing tables */
+
+.pricing-title {
+    margin: 10px 0;
+    padding: 24px 0;
+    color: rgb(117, 117, 117);
+    font-size: 24px;
+    font-weight: 400;
+}
+
+/* End About Section */
+
+.pricing-tables {
+    display: flex;
+    margin: 0 -8px;
+}
+
+.list-table {
+    padding: 0 8px;
+    width: 50%;
+}
+
+.table {
+    text-align: center;
+    list-style: none;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 2px 5px 0px;
+}
+
+.table:hover {
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.table li {
+    padding: 16px;
+    color: rgb(117, 117, 117);
+    font-size: 15px;
+    border-bottom: 1px solid rgb(221, 221, 221);
+}
+
+.option {
+    padding: 32px 16px !important;
+    color: #fff !important;
+    font-size: 24px !important;
+    line-height: 36px !important;
+}
+
+.option-basic {
+    background-color: rgb(97, 97, 97);
+}
+
+.option-pro {
+    background-color: #000;
+}
+
+
+.option-sign-up {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #000 !important;
+}
+
+.option-sign-up button {
+    padding: 12px 24px;
+    background-color: #fff !important;
+    border: none;
+    cursor: pointer;
+}
+
+.option-sign-up button:hover {
+    background-color: #007bff !important;
+    color: #fff;
+}
+
+
+
+
+/* Contact-section */
+.contact-section {
+    padding: 32px 0;
+    margin-bottom: 64px;
+
+}
+
+.section-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 15px;
+    color: rgb(117, 117, 117);
+    margin: 8px 0;
+}
+
+.icon i {
+    font-size: 32px !important;
+    width: 40px;
+    text-align: center;
+
+}
+
+/* Map of location */
+
+.image-map {
+    margin: 32px 0;
+    filter: grayscale(0.75);
+    width: 100%;
+}
+
+.call-message {
+    color: rgb(117, 117, 117);
+    font-size: 15px;
+}
+
+.form-input {
+    margin: 15px 0;
+}
+
+.form-input input {
+    padding: 16px 8px;
+    width: 100%;
+    border: 1px solid rgb(204, 204, 204);
+}
+
+.send-btn button {
+    padding: 12px 24px;
+    margin-top: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.send-btn button:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+
+
+
+/* Footer */
+.footer {
+    padding: 64px 16px;
+    text-align: center;
+    background-color: rgb(241, 241, 241);
+    margin: -24px;
+}

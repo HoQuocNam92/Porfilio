@@ -1,0 +1,35 @@
+@media (max-width: 768px) {
+    #sidebar {
+        display: none !important;
+    }
+
+    .banner-image {
+        display: block !important;
+    }
+
+    #page-content {
+        margin-left: 0 !important;
+    }
+
+    .section-image {
+        column-count: 1 !important;
+    }
+
+    .row-section {
+        display: block !important;
+    }
+
+    .col {
+        width: 100% !important;
+        display: inline-block;
+    }
+
+    .pricing-tables {
+        display: block !important;
+    }
+
+    .list-table {
+        width: 100% !important;
+        margin: 16px 0;
+    }
+}
