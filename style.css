@@ -9,6 +9,22 @@ html {
     font-family: "Montserrat", serif;
 }
 
+@keyframes slideIn {
+    0% {
+        transform: translateX(100%);
+    }
+
+    60% {
+        transform: translateX(-10%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+
 /* navigation */
 #nav {
     position: fixed;
@@ -20,7 +36,9 @@ html {
     padding-top: 150px;
     width: 60%;
     z-index: 999;
-    display: none;
+    visibility: hidden;
+    transform: translateX(100%);
+    transition: visibility 0.3s ease-out;
 }
 
 .remove-icon {
@@ -33,12 +51,14 @@ html {
     font-size: 32px;
     z-index: 1000;
     cursor: pointer;
-    display: none;
 }
 
-.active {
-    display: block !important;
+#nav.active {
+    visibility: visible !important;
+    animation: slideIn 0.7s cubic-bezier(0.25, 1, 0.5, 1) forwards !important;
 }
+
+
 
 .remove-icon:hover {
     background-color: #ccc;
